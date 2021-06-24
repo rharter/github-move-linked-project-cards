@@ -1,0 +1,18 @@
+name: 'Move Linked Project Cards'
+description: 'Automate Linked Project Cards in Project Boards based on PR status'
+inputs:
+  github-token:
+    description: 'The GITHUB_TOKEN secret can be passed in using {{ secrets.GITHUB_TOKEN }}'
+    required: true
+  column:
+    description: 'The name of the column to move the linked issues to'
+    required: true
+  draft-column:
+    description: 'The name of the column to move the linked issues to if the PR is a draft'
+    required: false
+runs:
+  using: 'node12'
+  main: 'dist/index.js'
+branding:
+  icon: 'cpu'
+  color: 'gray-dark'
