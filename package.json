@@ -1,6 +1,6 @@
 {
   "name": "move-linked-issues-action",
-  "version": "0.0.1",
+  "version": "0.1.0",
   "description": "Automate Linked Issues in Project Boards",
   "main": "dist/index.js",
   "author": "Ryan Harter <ryanjharter@gmail.com>",
